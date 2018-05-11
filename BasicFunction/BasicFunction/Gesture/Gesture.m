@@ -34,7 +34,6 @@
         [gesture setTranslation:CGPointZero inView:view];
     } else if (gesture.state == UIGestureRecognizerStateEnded || gesture.state == UIGestureRecognizerStateCancelled) {
         NSLog(@"FlyElephant---视图拖动结束");
-        CGPoint p = gesture.view.center;
     }
 }
 

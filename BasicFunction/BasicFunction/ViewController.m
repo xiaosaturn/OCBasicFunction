@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "UIApplication+Visible.h"
 
 @interface ViewController ()
 
@@ -16,7 +17,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    UINavigationController *nav = (UINavigationController *)[[UIApplication sharedApplication] visibleViewController];
+    [nav pushViewController:self animated:YES];
 }
 
 
